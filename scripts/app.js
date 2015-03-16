@@ -16,7 +16,10 @@ profile.config(['$routeProvider', function($routeProvider) {
     .when('/contact', {
       templateUrl: "views/contact.html",
       controller: "contactController"
-    });
+    })
+    .otherwise({
+        redirectTo: '/'
+      });
 }]);
 profile.config(function($mdThemingProvider) {
   $mdThemingProvider.theme('default')
