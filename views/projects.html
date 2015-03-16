@@ -1,0 +1,28 @@
+<div ng-controller="MyController" layout="column" style="padding-bottom: 15px;">
+  <md-toolbar class="md-warn">
+    <div class="md-toolbar-tools">
+      <div layout="row" flex class="fill-height">
+        <span>Agboola Olaide</span>
+        <div class="md-toolbar-item md-tools docs-tools" layout="column" layout-gt-md="row">
+          <span class="md-button">PROJECTS</span>
+        </div>
+      </div>
+    </div>
+  </md-toolbar>
+  <md-content class="md-padding" style="height: 720px;padding: 24px;">
+    <md-grid-list md-cols-sm="1" md-cols-md="2" md-cols-gt-md="6" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12x" md-gutter-gt-sm="8px">
+      <md-grid-tile md-rowspan="2" md-colspan="2" ng-repeat="values in repos">
+        <md-card>
+          <img ng-src="images/{{values.image}}">
+          <md-card-content>
+
+          </md-card-content>
+        </md-card>
+
+        <md-grid-tile-footer>
+          <h3><a href={{values.link}} target="_blank">{{values.name}}</a></h3>
+        </md-grid-tile-footer>
+      </md-grid-tile>
+    </md-grid-list>
+  </md-content>
+</div>

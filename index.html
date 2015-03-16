@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html ng-controller="MyController" ng-app="profile">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="bower_components/angular-material/angular-material.css">
+  <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+  <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+  <title>Agboola Olaide</title>
+</head>
+
+<body>
+  <div class="sections">
+    <md-sidenav md-is-locked-open="true" class="md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" id="sidenav">
+      <md-toolbar>
+        <div class="md-toolbar-tools">
+          <span class="md-flex"></span>
+        </div>
+      </md-toolbar>
+      <div class="innerSideNav">
+        <div class="imageHolder"><img src="images/me2.jpg" width="250px;">
+        </div>
+        <div class="info">
+          <!-- <span>Agboola Olaide</span>
+      <span>Software Developer at Andela</span> -->
+          <md-content>
+            <md-list>
+              <md-item>
+                <md-item-content>
+                  <div class="md-tile-content">
+                    <h3>Agboola Olaide</h3>
+                  </div>
+                </md-item-content>
+                <md-divider></md-divider>
+              </md-item>
+            </md-list>
+          </md-content>
+          <md-content>
+            <md-list>
+              <md-item>
+                <md-item-content>
+                  <div class="md-tile-content">
+                    <h3>Software Developer, Andela</h3>
+                  </div>
+                </md-item-content>
+                <md-divider></md-divider>
+              </md-item>
+            </md-list>
+          </md-content>
+        </div>
+      </div>
+    </md-sidenav>
+    <md-content>
+    </md-content>
+  </div>
+  <div class="sections mainContent">
+    <!-- <div class="subContent">
+    </div> -->
+    <div class="subContent">
+      <md-toolbar>
+        <div class="md-toolbar-tools" id="title">
+          <span>Agboola Olaide</span>
+          <span flex></span>
+          <span class="md-button"><a href="/#/">HOME</a></span>
+          <span class="md-button"><a href="#/about">ABOUT</a></span>
+          <span class="md-button"><a href="#/projects">PROJECTS</a></span>
+          <span class="md-button"><a href="#/contact">CONTACT</a></span>
+        </div>
+      </md-toolbar>
+    </div>
+    <div class="views">
+      <!-- <div class="navMenu"></div> -->
+      <md-content ng-view>
+
+      </md-content>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="scripts/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="bower_components/angular-animate/angular-animate.js">
+  </script>
+  <script type="text/javascript" src="bower_components/angular-aria/angular-aria.js"></script>
+  <script type="text/javascript" src="bower_components/angular-material/angular-material.js"></script>
+  <script type="text/javascript" src="scripts/app.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=drawing"></script>
+  <script type="text/javascript" src="scripts/controller.js"></script>
+  <script type="text/javascript" src="scripts/angular-route.js"></script>
+  <script type="text/javascript" src="scripts/services.js"></script>
+</body>
+
+</html>
